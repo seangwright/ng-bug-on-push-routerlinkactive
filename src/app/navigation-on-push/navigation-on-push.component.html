@@ -1,0 +1,8 @@
+<div>
+  <h3>Nav OnPush</h3>
+  <nav>
+    <a *ngFor="let route of routes" [routerLink]="[route.link]" routerLinkActive #rla="routerLinkActive" [class.active]="rla.isActive">
+      {{route.name}}
+    </a>
+  </nav>
+</div>
